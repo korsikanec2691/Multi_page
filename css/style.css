@@ -52,10 +52,6 @@ button {
     align-items: center;
 }
 
-.logo {}
-
-.logo__img {}
-
 .menu__list {
     display: flex;
     gap: 20px;
@@ -75,8 +71,6 @@ button {
     background-color: #7B6152;
     width: 100%;
 }
-
-.menu__list-item {}
 
 .menu__list-link {
     text-transform: uppercase;
@@ -99,6 +93,7 @@ button {
 
 .main {
     background-color: #FFF8F3;
+    overflow-x: clip;
 }
 
 .top {
@@ -178,11 +173,10 @@ button {
     gap: 15px;
 }
 
-.footer__social-item {}
 
-.footer__social-link {}
 
-.footer__social-img {}
+
+
 
 
 
@@ -190,6 +184,19 @@ button {
     .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .top__content {
+        width: 333px;
+        padding: 95px 0 70px;
+    }
+    .top__text {
+        margin-bottom: 30px;
+    }
+    .top__img {
+        left: 300px;
+    }
+    .top__img-l {
+        width: 655px;
     }
 }
 
@@ -224,6 +231,20 @@ button {
         left: -16px;
         top: -3px;
         background-size: cover;
+    }
+    .top__content {
+        width: 230px;
+    }
+    .top__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .top__text {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .top__img {
+        left: 180px;
     }
 }
 
@@ -278,5 +299,48 @@ button {
 
     .footer__menu-list {
         flex-direction: column;
+    }
+}
+@media(max-width:480px) {
+    .top {
+        padding: 30px 0 50px;
+    }
+    .top__img-l {
+        width: 308px;
+    }
+    .top__content {
+        width: 180px;
+    }
+    .top__title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .top__text {
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+    .top__btn {
+        font-size: 10px;
+        padding: 14px 41px;
+    }
+}
+
+@media(max-width:360px) {
+    .top__img {
+        left: auto;
+        right: 0;
+    }
+    .top__img-l {
+        width: 184px;
+    }
+    .top__content {
+        width: 200px;
+        padding: 20px 0 0;
+    }
+    .top__title {
+        font-size: 18px;
+    }
+    .top__text {
+        font-size: 10px;
     }
 }
